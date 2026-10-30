@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#00b5ad"><meta name="description" content="Bebas Jepret Interactive Demo — Pose Bebas, Kenangan Berkelas.">
+  <title>Bebas Jepret — Interactive Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-ribbon">MODE DEMO <span>•</span> DATA SIMULASI</div>
+  <header class="topbar">
+    <button class="brand" data-action="home" aria-label="Beranda"><img class="brand-mark" src="assets/logo.png" alt="Logo Bebas Jepret"><span><b>Bebas</b> <strong>Jepret.</strong><small>POSE BEBAS, KENANGAN BERKELAS.</small></span></button>
+    <div class="top-actions"><span class="online-dot">DEMO ONLINE</span><button class="icon-button" data-action="home" title="Beranda">⌂</button></div>
+  </header>
+  <main id="app" tabindex="-1">
+    <section class="view active" id="view-home">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> PHOTOBOX EXPERIENCE</div>
+          <h1>Abadikan momen,<br><em>bebas berekspresi.</em></h1>
+          <p class="lead">Kenali pengalaman photobox Bebas Jepret melalui simulasi interaktif. Coba alur customer dan lihat bagaimana aktivitasnya tercatat di dashboard admin.</p>
+          <div class="hero-buttons"><button class="btn primary" data-action="start-customer">Mulai Demo Customer <span>→</span></button><button class="btn secondary" data-action="open-admin">Lihat Dashboard Admin</button></div>
+          <div class="hero-foot"><span class="mini-check">✓</span> Simulasi aman · Tidak ada pembayaran atau upload sungguhan</div>
+        </div>
+        <div class="hero-art" aria-label="Ilustrasi photostrip"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-chip chip-top">SELF PHOTOBOOTH</div><div class="strip-card"><div class="strip-head">BEBAS JEPRET <small>PHOTO MOMENTS</small></div><div class="strip-frame f1"><img src="assets/photos/photo-01.svg" alt="Contoh foto"></div><div class="strip-frame f2"><img src="assets/photos/photo-02.svg" alt="Contoh foto"></div><div class="strip-frame f3"><img src="assets/photos/photo-03.svg" alt="Contoh foto"></div><div class="strip-end">POSE BEBAS ✦</div></div><div class="art-chip chip-bottom">PRINT • SAVE • SHARE</div></div>
+      </div>
+      <div class="feature-row"><article><span class="feature-icon teal">▧</span><b>Customer Experience</b><small>Pilih foto, atur template, edit, dan simpan cetakan.</small></article><article><span class="feature-icon orange">▤</span><b>Admin Dashboard</b><small>Pantau sesi, cetakan, template, dan status softfile.</small></article><article><span class="feature-icon blue">◷</span><b>Auto Delete 24 Jam</b><small>Simulasi masa simpan file dan jadwal penghapusan.</small></article></div>
+    </section>
+
+    <section class="view" id="view-customer">
+      <div class="page-heading"><div><div class="eyebrow">CUSTOMER EXPERIENCE</div><h2 id="customer-title">Pilih Foto Contoh</h2><p id="customer-subtitle">Pilih beberapa foto dummy untuk memulai sesi photobox.</p></div><button class="btn text-btn" data-action="home">← Beranda</button></div>
+      <div class="stepper" id="stepper"><div class="step active"><i>1</i><span>Foto</span></div><div class="step"><i>2</i><span>Template</span></div><div class="step"><i>3</i><span>Edit</span></div><div class="step"><i>4</i><span>Export</span></div></div>
+      <div id="customer-content"></div>
+    </section>
+
+    <section class="view" id="view-admin">
+      <div class="page-heading"><div><div class="eyebrow">MANAGEMENT OVERVIEW</div><h2>Admin Dashboard</h2><p>Ringkasan aktivitas Bebas Jepret — seluruh angka di halaman ini adalah data simulasi.</p></div><div class="admin-heading-actions"><span class="status-pill"><i></i> Sistem demo aktif</span><button class="btn secondary small" data-action="home">Beranda</button></div></div>
+      <div id="admin-content"></div>
+    </section>
+  </main>
+  <footer><span>© 2026 Bebas Jepret</span><span>Pose Bebas, Kenangan Berkelas.</span><span class="footer-demo">INTERACTIVE DEMO</span></footer>
+  <div class="modal-backdrop" id="modal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" data-action="close-modal" aria-label="Tutup">×</button><div id="modal-content"></div></div></div>
+  <script src="assets/demo-data.js"></script><script src="script.js"></script>
+</body>
+</html>
